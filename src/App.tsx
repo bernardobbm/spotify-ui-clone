@@ -1,12 +1,10 @@
-import { MenuNavigation } from './components/menu-navigation';
+import { Sidebar } from './components/Sidebar';
 
 export function App() {
 	return (
 		<div className="h-screen flex flex-col">
 			<div className="flex flex-1">
-				<aside className="w-72 bg-black text-white">
-					<MenuNavigation />
-				</aside>
+				<Sidebar />
 				<main>main</main>
 			</div>
 
