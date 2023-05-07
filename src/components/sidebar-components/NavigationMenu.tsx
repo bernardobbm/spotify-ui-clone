@@ -4,25 +4,27 @@ import { SidebarLink } from './SidebarLink';
 
 export function NavigationMenu() {
 	return (
-		<nav className="flex flex-col p-5 gap-3">
-			<SidebarLink styles="py-4">
+		<nav className="flex flex-col px-5 py-3">
+			<SidebarLink styles="py-4 mb-6">
 				<img src="/src/assets/spotify-icon-logo.svg" alt="Logo do Spotify" />
 			</SidebarLink>
 
-			<SidebarLink styles="p-1">
-				<Home size={25} />
-				Home
-			</SidebarLink>
+			<div className="flex flex-col gap-2">
+				<SidebarLink hoverColor={true}>
+					<Home size={25} />
+					Home
+				</SidebarLink>
 
-			<SidebarLink styles="p-1">
-				<Search size={25} />
-				Search
-			</SidebarLink>
+				<SidebarLink hoverColor={true}>
+					<Search size={25} />
+					Search
+				</SidebarLink>
 
-			<SidebarLink styles="p-1">
-				<Library size={25} />
-				Your Library
-			</SidebarLink>
+				<SidebarLink hoverColor={true}>
+					<Library size={25} />
+					Your Library
+				</SidebarLink>
+			</div>
 		</nav>
 	);
 }
