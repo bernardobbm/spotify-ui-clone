@@ -1,4 +1,4 @@
-import { DownloadCloud } from 'lucide-react';
+import { ArrowDownCircle } from 'lucide-react';
 
 import { SidebarLink } from './SidebarLink';
 import { NavigationMenu } from './NavigationMenu';
@@ -14,8 +14,8 @@ export function Sidebar() {
 				<PlaylistMenu />
 			</div>
 
-			<SidebarLink styles="px-7 py-5 gap-7">
-				<DownloadCloud size={25} />
+			<SidebarLink styles="px-7 py-5 gap-5">
+				<ArrowDownCircle size={25} />
 				Install the app
 			</SidebarLink>
 		</aside>
