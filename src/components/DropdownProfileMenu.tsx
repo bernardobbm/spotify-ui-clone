@@ -35,14 +35,18 @@ export function DropdownProfileMenu() {
 
 				<div
 					ref={menuProfile}
-					className="flex-col w-52 bg-zinc-900 p-4 gap-4 rounded absolute right-0 top-12 cursor-default font-semibold none"
+					className="flex-col w-52 bg-zinc-900 p-4 gap-4 rounded absolute right-0 top-12 cursor-default font-semibold hidden"
 				>
-					<a href="#" className="flex justify-between">
+					<a href="#" className="hover:bg-zinc-600 rounded p-1 flex justify-between">
 						Account
 						<ExternalLink />
 					</a>
-					<a href="#">Profile</a>
-					<a href="#">Log out</a>
+					<a href="#" className="hover:bg-zinc-600 rounded p-1">
+						Profile
+					</a>
+					<a href="#" className="hover:bg-zinc-600 rounded p-1">
+						Log out
+					</a>
 				</div>
 			</div>
 		</>
